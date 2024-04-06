@@ -95,7 +95,6 @@
   position: absolute;
   animation: arrow 0.5s ease-in-out infinite alternate;
   inset-inline-start: -20px;
-  /* Safari fix */
   inset-block-start: 0px;
 }
 .main {
@@ -247,9 +246,6 @@
   }
   .card__img-label {
     inset-inline-end: 11px;
-  }
-  .button {
-    padding: 10px 35px;
   }
 }
 @supports (
