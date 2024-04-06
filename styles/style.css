@@ -102,11 +102,10 @@
   display: grid;
   justify-items: center;
   gap: 57px;
-  padding-block-end: 105px;
 }
 .cards-list {
   display: grid;
-  gap: 52px;
+  gap: 51px;
 }
 .card {
   margin-inline: auto;
@@ -125,26 +124,20 @@
 }
 .card__img-wrapper {
   position: relative;
-  /* overflow - для коррекции эффектов filter blur */
   overflow: hidden;
 }
 .card__img-label {
   position: absolute;
   z-index: 1;
-
   opacity: 0.5;
-
   color: var(--text-color, #000000);
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
-
   font-size: 14px;
   line-height: normal;
-
   text-transform: uppercase;
   text-shadow: 0 0 1px var(--page-background-color, #ffffff);
-  inset-inline-end: 13px;
+  inset-inline-end: 23px;
   inset-block-start: 24px;
-
   mix-blend-mode: hard-light;
 }
 .card__img {
@@ -225,6 +218,7 @@
   align-items: center;
   gap: 10px;
   padding: 15px 20px;
+  margin: 50px auto 50px;
 }
 .button__text,
 .button__icon {
@@ -251,6 +245,12 @@
     block-size: 28px;
     inline-size: 28px;
   }
+  .card__img-label {
+    inset-inline-end: 11px;
+  }
+  .button {
+    padding: 10px 35px;
+  }
 }
 @supports (
   (-webkit-text-stroke: 1px var(--page-background-color, #ffffff)) or
@@ -265,17 +265,14 @@
 .filter-grayscale {
   filter: grayscale(70%);
 }
-.filter-multiple {
-  filter: contrast(1000%) hue-rotate(35deg) saturate(130%);
-}
-.filter-hue-rotate {
-  filter: hue-rotate(210deg);
-}
 .filter-saturate {
   filter: saturate(250%);
 }
+.filter-multiple {
+  filter: contrast(90%) hue-rotate(25deg) saturate(100%);
+}
 .filter-invert {
-  filter: invert(100%);
+  filter: invert(80%);
 }
 .filter-sepia {
   filter: sepia(90%);
@@ -283,4 +280,6 @@
 .filter-blur {
   filter: blur(10px);
 }
-
+.filter-image_8 {
+  filter: contrast(30%) hue-rotate(100deg) saturate(200%) blur(1px);
+}
