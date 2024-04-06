@@ -213,7 +213,7 @@
 }
 .button--save {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -233,13 +233,13 @@
   block-size: 36px;
   inline-size: 39px;
 }
-@media (min-width < 376px) {
+@media (min-width: 376px) {
   .modal {
     padding: 28px 34px 28px 40px;
     max-inline-size: 340px;
   }
   .button--save {
-    flex-direction: column;
+    flex-direction: row;
   }
   .button__icon {
     block-size: 28px;
@@ -248,7 +248,7 @@
   .card__img-label {
     inset-inline-end: 11px;
   }
-  .card-list{
+  .cards-list{
     gap: 51px;
   }
 }
