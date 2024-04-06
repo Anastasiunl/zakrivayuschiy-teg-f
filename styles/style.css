@@ -181,7 +181,6 @@
   position: relative;
   z-index: 1;
   border: 2px solid var(--text-color, #000000);
-  padding: 10px 36px;
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
   font-size: 14px;
   text-transform: inherit;
@@ -189,6 +188,8 @@
   transition: box-shadow 0.3s ease;
   cursor: pointer;
   appearance: none;
+  min-height: 38px;
+  min-width: 130px;
 }
 .button:focus {
   outline: none;
