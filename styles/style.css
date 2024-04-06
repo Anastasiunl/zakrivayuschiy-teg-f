@@ -283,3 +283,35 @@
 .filter-image_8 {
   filter: contrast(30%) hue-rotate(100deg) saturate(200%) blur(1px);
 }
+.modal {
+  color: var(--text-color, #000000);
+  font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
+  background: var(--page-background-color, #ffffff);
+  max-inline-size: 355px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  border: 2px solid var(--text-color, #000000);
+  padding: 25px 30px;
+}
+.modal[open] {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 30px;
+}
+.modal::backdrop {
+  background: var(--color-black, #000000);
+  opacity: 0.75;
+}
+.modal__content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.modal__icon {
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 39px;
+}
+.modal__button {
+  inline-size: 100%;
+}
