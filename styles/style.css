@@ -15,16 +15,16 @@
 */
 
 .page {
-  padding-block-start: 100px;
+  padding-block-start: 100px;  
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
   color: var(--text-color, #000000);
   font-family: var(--page-main-font-family, "Inter", sans-serif);
+  font-variation-settings: "wght" var(--page-main-font-weight, 400);
   background-color: var(--page-background-color, #ffffff);
   background-image: var(--page-background-image, none);
   background-size: cover;
   background-attachment: fixed;
-  font-variation-settings: "wght" var(--page-main-font-weight, 400);
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
 }
 .page__header {
   margin-block-end: 100px;
@@ -244,17 +244,14 @@
     padding: 28px 34px 28px 40px;
     max-inline-size: 340px;
   }
-
   .button--save {
     flex-direction: column;
   }
-
   .button__icon {
     block-size: 28px;
     inline-size: 28px;
   }
 }
-
 @supports (
   (-webkit-text-stroke: 1px var(--page-background-color, #ffffff)) or
     (text-stroke: 1px var(--page-background-color, #ffffff))
